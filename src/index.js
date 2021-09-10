@@ -2,9 +2,10 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import HelloWorld from "./business";
+import Dictionary from './dictionary.service';
 
-$("#click-me").click(function () {
-  let message = HelloWorld();
-  $("h2").text(message);
-});
+function displayDefinition(response) {
+  if (response.main) {
+    $("#display-definition").text()
+  }
+}
